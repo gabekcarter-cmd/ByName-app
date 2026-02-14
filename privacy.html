@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — By Name</title>
+    <meta name="description" content="By Name privacy policy. No data collection, no tracking, no cloud. Everything stays on your device.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F5F1E8;
+            --card: #FDFBF6;
+            --ink: #1A1610;
+            --ink-soft: #3D3529;
+            --ink-muted: #7A7062;
+            --charcoal: #2C2822;
+            --border: #DDD8CC;
+            --border-light: #E8E3D7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        /* Nav */
+        nav {
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-mark {
+            display: flex; align-items: center; gap: 0.65rem;
+            text-decoration: none; color: var(--ink);
+        }
+        .nav-mark img { width: 32px; height: 32px; border-radius: 7px; }
+        .nav-mark span { font-family: 'Newsreader', Georgia, serif; font-size: 1.1rem; font-weight: 500; }
+        .nav-back {
+            text-decoration: none; color: var(--ink-muted); font-size: 0.875rem;
+            font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s ease;
+        }
+        .nav-back:hover { color: var(--ink); }
+
+        /* Content */
+        .policy {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .policy h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .policy .updated {
+            font-size: 0.9rem;
+            color: var(--ink-muted);
+            margin-bottom: 3rem;
+        }
+
+        .policy .intro {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: var(--ink-soft);
+            margin-bottom: 3rem;
+        }
+
+        .policy h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--ink);
+        }
+
+        .policy p {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--ink-soft);
+        }
+
+        .policy p + p { margin-top: 1rem; }
+
+        .policy a {
+            color: var(--ink);
+            text-decoration-color: var(--border);
+            text-underline-offset: 3px;
+            transition: text-decoration-color 0.2s ease;
+        }
+        .policy a:hover { text-decoration-color: var(--ink); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex; justify-content: center; gap: 2rem;
+            margin-bottom: 1.25rem; flex-wrap: wrap;
+        }
+        .footer-links a {
+            text-decoration: none; color: var(--ink-muted); font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+        .footer-links a:hover { color: var(--ink); }
+        .footer-copy { font-size: 0.8rem; color: var(--ink-muted); opacity: 0.7; }
+
+        @media (max-width: 640px) {
+            nav { padding: 1rem 1.25rem; }
+            .policy { padding: 3rem 1.5rem 5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-mark">
+            <img src="icon.png" alt="By Name icon">
+            <span>By Name</span>
+        </a>
+        <a href="index.html" class="nav-back">← Back</a>
+    </nav>
+
+    <article class="policy">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: February 2026</p>
+
+        <p class="intro">By Name is built by Gabe Carter as a personal productivity app. This policy explains how the app handles your information. The short version: it doesn't collect any.</p>
+
+        <h2>Data Collection</h2>
+        <p>By Name does not collect, transmit, or share any personal data. All names, notes, and app settings are stored locally on your device using Apple's SwiftData framework. No data ever leaves your device.</p>
+
+        <h2>No Analytics</h2>
+        <p>The app contains no analytics, tracking, or telemetry of any kind.</p>
+
+        <h2>No Third-Party Services</h2>
+        <p>By Name does not integrate with any third-party services, advertising networks, or data brokers.</p>
+
+        <h2>No Account Required</h2>
+        <p>The app does not require you to create an account, provide an email address, or sign in to any service.</p>
+
+        <h2>Data Storage</h2>
+        <p>All data is stored on-device only. If you delete the app, all data is permanently deleted. The app does not use iCloud sync.</p>
+
+        <h2>Siri Integration</h2>
+        <p>When you use Siri voice commands, your voice input is processed by Apple's Siri framework. By Name does not have access to your voice recordings. The processed text is stored locally on your device.</p>
+
+        <h2>Notifications</h2>
+        <p>The app may send local notifications for reminders you configure. These are scheduled entirely on-device and do not involve any external server.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>By Name does not knowingly collect information from children under 13.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>Any updates to this privacy policy will be reflected here with an updated date.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this policy, you can reach the developer at <a href="mailto:gabekcarter@gmail.com">gabekcarter@gmail.com</a>.</p>
+    </article>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="mailto:gabekcarter@gmail.com">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Gabe Carter. Built in Molalla, Oregon.</p>
+    </footer>
+</body>
+</html>
